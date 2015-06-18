@@ -1,10 +1,13 @@
 package com.example.android.hexme;
 
+import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import java.util.Random;
 
@@ -41,7 +44,11 @@ public class MainActivity extends ActionBarActivity {
 
     public void changeColor(View view){
         String randColor = "#"+ genValue()+genValue()+genValue();
-    } 
+        RelativeLayout background = (RelativeLayout) findViewById(R.id.container);
+        background.setBackgroundColor(Color.parseColor(randColor));
+        TextView colorText = (TextView) findViewById(R.id.colorText);
+        colorText.setText(randColor);
+    }
     /**
      *Generates a string of two characters that
      *correspont to a hexadecimal value from 00 to FF
