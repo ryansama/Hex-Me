@@ -30,25 +30,27 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Hex Me!"
         android:id="@+id/textView"
-        android:layout_marginBottom="69dp"
         android:elevation="6dp"
         android:textSize="31sp"
-        android:layout_alignBottom="@+id/view"
+        android:textColor="#FFF"
+        android:layout_alignTop="@+id/view"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textColor="#FFF"/>
+        android:layout_marginTop="73dp"
+        android:layout_gravity="center"
+        android:textStyle="normal"
+        android:textColorHighlight="@color/accent_material_light" />
 
     <at.markushi.ui.CircleButton
         android:layout_width="185dip"
         android:layout_height="185dip"
-        android:layout_marginBottom="63dp"
+        android:layout_marginBottom="59dp"
         app:cb_color="#760f0f0f"
         app:cb_pressedRingWidth="12dip"
         android:onClick="changeColor"
         android:id="@+id/view"
         android:visibility="visible"
+        android:elevation="2dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:elevation="2dp"/>
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
